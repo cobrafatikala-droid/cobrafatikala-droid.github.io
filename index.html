@@ -1,11 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Game Rijal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+      /* Reset */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          
+        }
+        body {
+            font-family: "Roboto", sans-serif ;
+        }
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  padding: 15px 30px;
+  color: white;
+}
+
+header .logo {
+    display: flex;
+  width: 120px;
+  height: 80px;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #f39c12;
+}
+
+nav .btn {
+  background: #f39c12;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* search bar */
+
+/* Banner */
+.banner {
+  text-align: center;
+  padding: 60px 20px;
+  background: url("/gambar/5.jpg") no-repeat center/cover;
+  color: white;
+}
+
+.banner h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.banner .btn {
+  background: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Produk */
+.produk {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.produk h2 {
+  margin-bottom: 30px;
+}
+
+.produk-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card .btn {
+  display: inline-block;
+  background: #2c3e50;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Tentang & Kontak */
+.tentang, .kontak {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.tentang h2, .kontak h2 {
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #2c3e50;
+  color: white;
+  font-size: 14px;
+}
+</style>
 </head>
 <body>
-    <h1>test github</h1>
+  <!-- Navbar -->
+  <header>
+    <div class="logo"> <img src="/gambar/4.jpg" alt=""></div>
+    <nav>
+      <a href="#home">Beranda</a>
+      <a href="#produk">Produk</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+      <!-- <input type="text" placeholder="Cari game...."> -->
+      <a href="/latihan2/index.html" class="btn">Login</a>
+      <a href="/latihan3/index.html" class="btn">Daftar</a>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section id="home" class="banner">
+    <h1>Selamat Datang di Toko Game Rijal</h1>
+    <p>Tempat beli game original dengan harga terbaik 🎮</p>
+    <a href="#produk" class="btn">Lihat Produk</a>
+  </section>
+
+  <!-- Search bar -->
+  
+  <!-- Produk -->
+  <section id="produk" class="produk">
+    <h2>Daftar Game</h2>
+    <div class="produk-list">
+      <div class="card">
+        <img src= "/gambar/1.jpg" alt="GTA V">
+        <h3>GTA V</h3>
+        <p>Rp 250.000</p>
+        <a href="#" class="btn">Beli</a>
+      </div>
+      <div class="card">
+        <img src="/gambar/2.jpg" alt="FIFA 23">
+        <h3>FIFA 25</h3>
+        <p>Rp 300.000</p>
+        <a href="#" class="btn">Beli</a>
+      </div>
+      <div class="card">
+        <img src="/gambar/3.jpg" alt="Minecraft">
+        <h3>Minecraft</h3>
+        <p>Rp 150.000</p>
+        <a href="#" class="btn">Beli</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section id="tentang" class="tentang">
+    <h2>Tentang Kami</h2>
+    <p>
+      Toko Game Rijal menyediakan berbagai game original untuk PC dan konsol.
+      Semua produk kami dijamin resmi dan aman untuk dimainkan.
+    </p>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="kontak">
+    <h2>Kontak</h2>
+    <p>Email: rijal@example.com</p>
+    <p>Instagram: @tokogamerijal</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Toko Game Rijal. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
